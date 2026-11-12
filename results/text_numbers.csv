@@ -1,0 +1,111 @@
+"section","quantity","group","value"
+"3.1","excluded studies (share)","all",0.061
+"3.1","outcome among remainders (base rate)","0",0.275
+"3.1","outcome among remainders (base rate)","0.05",0.275
+"3.1","outcome among remainders (base rate)","0.1",0.275
+"3.1","outcome among remainders (base rate)","0.2",0.275
+"3.1","CSA share of SAs","0",0.161
+"3.1","CSA share of SAs","0.05",0.293
+"3.1","CSA share of SAs","0.1",0.346
+"3.1","CSA share of SAs","0.2",0.394
+"3.1","CSA precision by cases","N=20, noise=0",0.399
+"3.1","CSA precision by cases","N=40, noise=0",0.471
+"3.1","CSA precision by cases","N=80, noise=0",0.585
+"3.1","CSA precision by cases","N=20, noise=0.05",0.357
+"3.1","CSA precision by cases","N=40, noise=0.05",0.378
+"3.1","CSA precision by cases","N=80, noise=0.05",0.362
+"3.1","CSA precision by cases","N=20, noise=0.1",0.335
+"3.1","CSA precision by cases","N=40, noise=0.1",0.331
+"3.1","CSA precision by cases","N=80, noise=0.1",0.321
+"3.1","CSA precision by cases","N=20, noise=0.2",0.297
+"3.1","CSA precision by cases","N=40, noise=0.2",0.292
+"3.1","CSA precision by cases","N=80, noise=0.2",0.28
+"3.1","other SA precision by cases","N=20, noise=0",0.716
+"3.1","other SA precision by cases","N=40, noise=0",0.823
+"3.1","other SA precision by cases","N=80, noise=0",0.932
+"3.1","other SA precision by cases","N=20, noise=0.05",0.628
+"3.1","other SA precision by cases","N=40, noise=0.05",0.715
+"3.1","other SA precision by cases","N=80, noise=0.05",0.798
+"3.1","other SA precision by cases","N=20, noise=0.1",0.556
+"3.1","other SA precision by cases","N=40, noise=0.1",0.627
+"3.1","other SA precision by cases","N=80, noise=0.1",0.696
+"3.1","other SA precision by cases","N=20, noise=0.2",0.453
+"3.1","other SA precision by cases","N=40, noise=0.2",0.499
+"3.1","other SA precision by cases","N=80, noise=0.2",0.535
+"3.2","untenable share of SAs","0",0.083
+"3.2","untenable share of SAs","0.05",0.068
+"3.2","untenable share of SAs","0.1",0.045
+"3.2","untenable share of SAs","0.2",0.018
+"3.2","untenable precision, consistency-only necessity","0",0.589
+"3.2","untenable precision, consistency-only necessity","0.05",0.41
+"3.2","untenable precision, consistency-only necessity","0.1",0.342
+"3.2","untenable precision, consistency-only necessity","0.2",0.28
+"3.2","tenable precision, consistency-only necessity","0",0.801
+"3.2","tenable precision, consistency-only necessity","0.05",0.653
+"3.2","tenable precision, consistency-only necessity","0.1",0.551
+"3.2","tenable precision, consistency-only necessity","0.2",0.426
+"3.2","untenable SAs, consistency-only vs main criterion (ratio)","0",3.182
+"3.2","untenable SAs, consistency-only vs main criterion (ratio)","0.05",3.345
+"3.2","untenable SAs, consistency-only vs main criterion (ratio)","0.1",4.012
+"3.2","untenable SAs, consistency-only vs main criterion (ratio)","0.2",6.142
+"3.3","share of whole solutions with all terms sufficient","pars 0",0.558
+"3.3","share of whole solutions with all terms sufficient","pars 0.05",0.3
+"3.3","share of whole solutions with all terms sufficient","pars 0.1",0.191
+"3.3","share of whole solutions with all terms sufficient","pars 0.2",0.089
+"3.3","share of whole solutions with all terms sufficient","clean 0",0.617
+"3.3","share of whole solutions with all terms sufficient","clean 0.05",0.363
+"3.3","share of whole solutions with all terms sufficient","clean 0.1",0.24
+"3.3","share of whole solutions with all terms sufficient","clean 0.2",0.114
+"3.3","share of whole solutions with all terms termwise B&T","pars 0",0.839
+"3.3","share of whole solutions with all terms termwise B&T","pars 0.05",0.376
+"3.3","share of whole solutions with all terms termwise B&T","pars 0.1",0.209
+"3.3","share of whole solutions with all terms termwise B&T","pars 0.2",0.078
+"3.3","share of whole solutions with all terms termwise B&T","clean 0",0.704
+"3.3","share of whole solutions with all terms termwise B&T","clean 0.05",0.304
+"3.3","share of whole solutions with all terms termwise B&T","clean 0.1",0.168
+"3.3","share of whole solutions with all terms termwise B&T","clean 0.2",0.061
+"3.3","random control: sufficient terms","clean",0.381
+"3.3","random control: sufficient terms","pars",0.301
+"3.3","random control: termwise B&T terms","clean",0.87
+"3.3","random control: termwise B&T terms","pars",0.957
+"3.3","generating conjunctions: correct terms","clean",0.776
+"3.3","generating conjunctions: correct terms","pars",0.898
+"3.3","generating conjunctions: whole solutions","clean",0.683
+"3.3","generating conjunctions: whole solutions","pars",0.823
+"3.4","SAs at distance 2 or more (share)","0",0.287
+"3.4","SAs at distance 2 or more (share)","0.05",0.317
+"3.4","SAs at distance 2 or more (share)","0.1",0.33
+"3.4","SAs at distance 2 or more (share)","0.2",0.338
+"3.5","H5: sufficient terms with 1-2 rows","4",0.801
+"3.5","H5: sufficient terms with 1-2 rows","5",0.547
+"3.5","H5: sufficient terms with 1-2 rows","6",0.362
+"3.5","H5: sufficient terms with 1-2 rows","7",0.283
+"3.5","H5: sufficient terms with 5+ rows","4",0.0
+"3.5","H5: sufficient terms with 5+ rows","5",0.748
+"3.5","H5: sufficient terms with 5+ rows","6",0.821
+"3.5","H5: sufficient terms with 5+ rows","7",0.77
+"3.5","terms with no unobserved rows (share)","0",0.204
+"3.5","terms with no unobserved rows (share)","0.05",0.184
+"3.5","terms with no unobserved rows (share)","0.1",0.176
+"3.5","terms with no unobserved rows (share)","0.2",0.159
+"3.5","AUC remainder share, terms with unobserved rows","0",0.701
+"3.5","AUC remainder share, terms with unobserved rows","0.05",0.72
+"3.5","AUC remainder share, terms with unobserved rows","0.1",0.721
+"3.5","AUC remainder share, terms with unobserved rows","0.2",0.711
+"3.5","AUC raw coverage, terms with unobserved rows","0",0.624
+"3.5","AUC raw coverage, terms with unobserved rows","0.05",0.683
+"3.5","AUC raw coverage, terms with unobserved rows","0.1",0.682
+"3.5","AUC raw coverage, terms with unobserved rows","0.2",0.639
+"3.6","AUC remainder share within design levels (min, max)","noise 0",0.675
+"3.6","AUC remainder share within design levels (min, max)","noise 0",0.872
+"3.6","AUC remainder share within design levels (min, max)","noise 0.10",0.719
+"3.6","AUC remainder share within design levels (min, max)","noise 0.10",0.844
+"3.7","untenable share of SAs under condition errors","0",0.083
+"3.7","untenable share of SAs under condition errors","0.05",0.082
+"3.7","untenable share of SAs under condition errors","0.1",0.067
+"3.7","AUC remainder share under condition errors","0",0.789
+"3.7","AUC remainder share under condition errors","0.05",0.765
+"3.7","AUC remainder share under condition errors","0.1",0.754
+"3.7","AUC raw coverage under condition errors","0",0.601
+"3.7","AUC raw coverage under condition errors","0.05",0.655
+"3.7","AUC raw coverage under condition errors","0.1",0.646

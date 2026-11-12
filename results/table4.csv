@@ -1,0 +1,7 @@
+"dataset","cases","SA","CSA","untenable","cleaning_changed","weakest_term","weakest_rows","weakest_raw_cov"
+"Krook",22,15,6,0,TRUE,"WS",4,0.455
+"Hino",15,6,0,0,FALSE,"CONV",4,0.846
+"Lipset",18,5,0,0,FALSE,"DEV*STB",3,1
+"SchneiderSadowski",14,33,20,0,TRUE,"NPM3",4,0.571
+"Cragun",15,14,0,8,TRUE,"~DC*~PR",2,1
+"Borradaile",19,11,2,4,TRUE,"~MOTI*~RISK",2,0.2
