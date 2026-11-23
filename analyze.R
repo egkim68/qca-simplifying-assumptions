@@ -18,7 +18,7 @@ tm <- merge(tm, unique(d[, keys]), by = "condition_id")
 tp <- tm[tm$solution == "pars" & tm$family == "structured" & tm$incl.cut == 0.8, ]
 tp$ds <- paste(tp$condition_id, tp$rep)
 
-# ---- 1. precision of assumption types (Table 2, Figure 2, H1-H4) ----
+# ---- 1. precision of assumption types (Table 1, Figure 2, H1-H4) ----
 okc <- c(rbind(c(ty, "unt2", "ten2"), paste0(c(ty, "unt2", "ten2"), "_ok")))
 cell <- aggregate(d[, okc], d[, keys], sum)
 pr <- function(k, m) ifelse(m > 0, k / m, NA)
@@ -81,7 +81,7 @@ save(do.call(rbind, lapply(sort(unique(q$noise)), function(nz) { z <- q[q$noise 
   data.frame(noise = nz, share_rho0 = mean(z$rem_share == 0), auc_rem_pos = auc(-p$rem_share, p$sufficient), auc_raw_pos = auc(p$raw_cov, p$sufficient))
 })), "remainder_share_restricted.csv")
 
-# ---- 4. hypothesis decisions (Table 3) ----
+# ---- 4. hypothesis decisions (Table 2) ----
 SC <- cell[cell$family == "structured" & cell$incl.cut == 0.8, ]
 share <- function(v, thr) c(mean(v >= thr, na.rm = TRUE), sum(!is.na(v)))
 H <- rbind(H1 = share(SC$h1, 0.15), H2 = share(SC$h2, 0.10), H3 = share(SC$h3, 0.05), H4 = share(SC$h4, 0.15))
@@ -115,7 +115,7 @@ save(held, "held_out.csv")
 # Regenerated studies (identical data from the saved random-number streams)
 g <- conditions_main(); gD <- g[g$shape != "N1" & g$incl.cut == 0.8, ]
 pp <- function(z, k) sum(z[[paste0(k, "_ok")]], na.rm = TRUE) / sum(z[[k]], na.rm = TRUE)
-# (a) consistency cut-offs on the same studies (Supplementary Table S3)
+# (a) consistency cut-offs on the same studies (Section 3.6)
 cut_cells <- gD$condition_id[gD$shape %in% c("D2", "D3") & gD$n %in% 5:6 & gD$N == 40 & gD$dist == "uniform"]
 cuts <- do.call(rbind, parallel::mclapply(cut_cells, function(id) do.call(rbind, lapply(c(0.75, 0.8, 1), function(ct) {
   cond <- gD[gD$condition_id == id, ]; cond$incl.cut <- ct
@@ -141,7 +141,7 @@ base <- do.call(rbind, parallel::mclapply(gD$condition_id, function(id) {
   data.frame(noise = cond$noise, R = R, R1 = R1) }, mc.cores = cores))
 b <- aggregate(cbind(R, R1) ~ noise, base, sum); b$prev_remainders <- b$R1 / b$R; save(b, "base_rate.csv")
 
-# ---- 6. errors in the conditions (Supplementary Table S4, Section 3.7) ----
+# ---- 6. errors in the conditions (Supplementary Table S3, Section 3.7) ----
 x <- readall("raw/extension", "^cell_"); xt <- readall("raw/extension", "^terms_")
 m0 <- d[d$family == "structured" & d$noise == 0 & main, ]; m0$xnoise <- 0
 xk <- c("condition_id", "xnoise", c(rbind(ty, paste0(ty, "_ok"))))
@@ -155,7 +155,7 @@ save(do.call(rbind, lapply(split(tt0, tt0$xnoise), function(z) { p <- z[z$soluti
   data.frame(xnoise = z$xnoise[1], auc_rem = auc(-p$rem_share, p$sufficient), auc_raw = auc(p$raw_cov, p$sufficient)) })),
   "condition_errors_terms.csv")
 
-# ---- 7. six published data sets (Table 4, Supplementary Table S5) ----
+# ---- 7. six published data sets (Table 3, Supplementary Table S4) ----
 sets <- list(
   Krook = list(file = "Krook.tab", outcome = "WNP", conds = c("ES", "QU", "WS", "WM", "LP")),
   Hino = list(file = "HC.tab", outcome = "VOTE", conds = c("FOREIGN", "UNEMP", "CONV", "PRES80")),
