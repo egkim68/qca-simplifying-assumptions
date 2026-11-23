@@ -17,4 +17,4 @@ Rscript figures.R              # Figures 1-4     -> figures/
 
 Each study has its own random-number stream (seed 60261110 or 70261110 plus the cell number), so any cell can be rerun alone with identical results.
 
-MIT License.
+MIT License. If you use this code or data, please cite the paper (full reference to be added after publication).
