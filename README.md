@@ -15,6 +15,8 @@ Rscript figures.R              # Figures 1-4     -> figures/
 - `data/`: the six published data sets.
 - `results/`: the output of `analyze.R`, one file per table and figure (`table2.csv`, `tableS1.csv`, `figure2.csv`, ...) plus `text_numbers.csv` for numbers quoted in the text.
 
+Result files keep their original names. In the final paper they correspond to: `table2.csv` Table 1; `table3.csv` Table 2; `table4.csv` Table 3; `tableS2.csv` Table S2; `tableS4.csv` Table S3; `tableS5.csv` Table S4. `tableS1.csv` (unflagged precision) and `tableS3.csv` (consistency cut-offs) are not shown as tables in the paper; the cut-off check is summarized in Section 3.6. Table S1 of the paper is the design table and has no result file.
+
 Each study has its own random-number stream (seed 60261110 or 70261110 plus the cell number), so any cell can be rerun alone with identical results.
 
 MIT License. If you use this code or data, please cite the paper (full reference to be added after publication).
